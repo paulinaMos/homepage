@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dziennik WTF: Co ten frontend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav id="topnav">
+            <a href=#about>O mnie</a>
+            <a href=#notes>Notatki</a>
+            <a href=#citations>Cytaty</a>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div id="content">
+
+            <header>
+                <h1>Dziennik WTF: Co ten frontend</h1>
+            </header>
+
+            <section>
+                <h2 id="about">Kilka słów o mnie</h2>
+                <img class="img_avatar" src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+                <p>Cześć! Jestem Paulina a to mój kursowy dziennik, który będzie się rozwijał razem ze mną. Na co dzień
+                    zajmuję
+                    się UX/UI Designem w jednym z gdyńskich softwarehouse'ów. Po godzinach fanka grania na konsoli, gier
+                    planszowych, sztuki i psychologii oraz uczenia się dziwnych rzeczy. I właśnie dlatego tu jestem!</p>
+            </section>
+
+            <section>
+                <h2 id="notes">Notatki z kursu</h2>
+                <article>
+                    <h3>Tydzień 1</h3>
+                    <h4>Jak korzystać z kursu?</h4>
+
+                    <ol>
+                        <li>Obejrzyj wszystkie lekcje</li>
+                        <li>Sprawdź prace domowe</li>
+                        <li>Obejrzyj jeszcze raz przy wykonywaniu zadań</li>
+                    </ol>
+                    <p>Kurs jest skierowany do osób, które zaczynają od zera. W jego trakcie dowiesz się jak wygląda
+                        praca Frontendowca i z jakich
+                        narzędzi korzysta. Nauczysz się HTML, CSS, JavaSript oraz planowania swojej pracy.</p>
+
+                    <h4>Czym jest frontend?</h4>
+                    <ul>
+                        <li>odpowiada za wygląd stron / aplikacji internetowych,</li>
+                        <li>odpowiada za interakcję z użytkownikiem,</li>
+                        <li>jest generowany przy użyciu trzech technologii: HTML, CSS i JavaScript</li>
+                        <li>Technologie, które są używane do budowania aplikacji, stron itp.: HTML, CSS, JavaScript
+                            (część programistyczna).</li>
+                    </ul>
+
+                    <h4>Czym jest backend?</h4>
+                    <ul>
+                        <li>Wszystko co dzieje się poza przeglądarką.</li>
+                    </ul>
+                    <h4>Ścieżka rozwoju</h4>
+                    <p><a href="https://roadmap.sh/frontend">Kliknij tutaj</a>, aby zobaczyć frontendową roadmapę.</p>
+                </article>
+                <article>
+                    <h3>Tydzień 2</h3>
+
+                    <h4>Kilka słów o warstwach</h4>
+
+                    <p>Poza cebulą i ogrami, również strony internetowe mają warstwy. W świecie informatycznym liczymy
+                        od 0,
+                        tak więc mamy:</p>
+                    <ul>
+                        <li><strong>Warstwa 0 - Treść</strong> czyli rzecz najważniejsza</li>
+                        <li><strong>Warstwa 1 - Semantyka</strong> lub inaczej HTML, który opisuje nam warstwę treści,
+                            "opakowuje ją" w znaczniki</li>
+                        <li><strong>Warstwa 2 - Prezentacja</strong> czyli CSS, który nadaje wygląd</li>
+                        <li><strong>Warstwa 3 - Interakcja</strong> czyli JavaScript</li>
+                    </ul>
+
+                    <p>Wyobraź sobie warstwy w formie bloku, w którym na każdym piętrze mieszka inny sąsiad (zaczynając
+                        od
+                        treści
+                        na parterze). Sąsiedzi niestety mają tę smutną przypadłość, że często zalewają tych, których
+                        mają
+                        poniżej.</p>
+
+                    <p>Każda z warstw ma swoją
+                        odpowiedzialność, dlatego pamiętaj <strong>jeśli możesz coś zrobić HTMLem, to rób to HTMLem i
+                            nie
+                            mieszaj do
+                            tego, np. JavaScriptu</strong></p>
+
+                    <h4>HTML</h4>
+                    <p>HTML to skrót od HyperText Markup Language. To język <strong>znaczników</strong>, a nie
+                        programowania!</p>
+
+                    <p><span style="color: orange"> &lt;znacznik</span><span style="color: rgb(31, 157, 189)">
+                            atrybut="wartość"</span><span style="color: orange">&gt;</span>treść<span
+                            style="color: orange"> &lt;/znacznik&gt;</span></p>
+
+                            <h5>Główne znaczniki</h5>
+                            <ul>
+                                <li><strong>&lt;main&gt;</strong> - główna część dokumentu</li>
+                                <li><strong>&lt;section&gt;</strong> - sekcje dokumentu, dla logicznego podziału całości;</li>
+                                <li><strong>&lt;article&gt;</strong> - samodzielne treści, coś jak sekcja sport w gazecie, artykuł;</li>
+                                <li><strong>&lt;header&gt;</strong> - nagłówek dokumentu, sekcji, artykułu</li>
+                                <li><strong>&lt;footer&gt;</strong> - stopka dokumentu, sekcji, artykułu</li>
+                                <li><strong>&lt;h1-h6&gt;</strong> - tekstowe nagłówki tytułowe dokumentu, sekcji, artykułu</li>
+                                <li><strong>&lt;p&gt;</strong> - paragraf/akapit</li>
+                            </ul>
+
+                            <p>Cała specyfikacja HTML jest dostępna na <a href="https://www.w3.org/TR/html52/">stronie w3c</a>.</p>
+                    <h4>CSS</h4>
+                </article>
+            </section>
+
+            <section>
+                <h2 id="citations">Złote cytaty</h2>
+                <ul>
+                <li><cite>"Programowanie jak gotowanie"</cite></li>
+                <li><cite>"MacGyver miał swój scyzoryk, a deweloperzy mają swoje DevTools'y"</cite></li>
+            </ul>
+            </section>
+            <section>
+                <h2>Przydatne linki</h2>
+                <!--linki poniżej na razie nie mają działać-->
+
+                <ul>
+                    <li>https://roadmap.sh/frontend</li>
+                    <li>https://validator.w3.org/nu/#textarea</li>
+                    <li>https://www.w3.org/TR/html52/</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            Strona domowa Pauliny Mos - wszystkie treści są efektem uczestnictwa w szkoleniu WTF: Co Ten Frontend
+        </footer>
+    </main>
+</body>
+
+</html>
