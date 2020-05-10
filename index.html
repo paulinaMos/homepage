@@ -1,521 +1,63 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dziennik WTF: Co ten frontend</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav id="top-nav">
-            <a href="index2.html">Strona główna</a>
-            <a href="nauka-html.html">Nauka HTML</a>
-            <a href="nauka-html.html">Nauka CSS</a>
-            <a href="nauka-html.html">Nauka JS</a>
-            <a href="cytaty.html">Cytaty</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">Notatki</a>
+        <a class="navigation__link" href="linki.html">Linki</a>
+        <a class="navigation__link" href="cytaty.html">Cytaty</a>
+      </nav>
     </header>
 
-    <main>
+    <main class="content">
+      <div class="page-header">
+        <header>
+            <h1>Dziennik WTF: Co ten frontend</h1>
+        </header>
+    </div>
+<div class="content-card">
+         <header class="hero hero__header">
+            
+            <div class="hero__text"><h2>Kilka słów o mnie</h2>
+            <p class="hero__description">
+              Cześć! Jestem Paulina a to mój WTFowy dziennik, który będzie się
+              rozwijał razem ze mną. Na co dzień zajmuję się UX/UI Designem w
+              jednym z gdyńskich softwarehouse'ów. Po godzinach fanka grania na
+              konsoli, gier planszowych, sztuki i psychologii oraz uczenia się
+              dziwnych rzeczy. I właśnie dlatego tu jestem!
+            </p>
+          </div>
+          <img class="hero__image"
+            src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            alt="Jasne zdjęcie części przestrzeni biurowej z MacBookiem, lampką i kubkiem na biurku"/>
+          </header>          
 
-        <div class="content">
 
-            <header>
-                <h1>Dziennik WTF: Co ten frontend</h1>
-            </header>
-            <div class="content-card">
-                <section>
-                    <h2 id="about">Kilka słów o mnie</h2>
-                    <img class="img-avatar"
-                        src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                        alt="Jasne zdjęcie części przestrzeni biurowej z MacBookiem, lampką i kubkiem na biurku">
-                    <p>Cześć! Jestem Paulina a to mój kursowy dziennik, który będzie się rozwijał razem ze mną. Na co
-                        dzień
-                        zajmuję
-                        się UX/UI Designem w jednym z gdyńskich softwarehouse'ów. Po godzinach fanka grania na konsoli,
-                        gier
-                        planszowych, sztuki i psychologii oraz uczenia się dziwnych rzeczy. I właśnie dlatego tu jestem!
-                    </p>
-                </section>
-            </div>
-            <div class="content-card">
-                <section>
-                    <h2 id="notes">Notatki z kursu</h2>
-                    <article>
-                        <h3>Tydzień 1</h3>
-                        <section>
-                            <h4>Jak korzystać z kursu?</h4>
-
-                            <ol>
-                                <li>Obejrzyj wszystkie lekcje</li>
-                                <li>Sprawdź prace domowe</li>
-                                <li>Obejrzyj jeszcze raz przy wykonywaniu zadań</li>
-                            </ol>
-                            <p>Kurs jest skierowany do osób, które zaczynają od zera. W jego trakcie dowiesz się jak
-                                wygląda
-                                praca Frontendowca i z jakich
-                                narzędzi korzysta. Nauczysz się HTML, CSS, JavaSript oraz planowania swojej pracy.</p>
-
-                            <h4>Czym jest frontend?</h4>
-                            <ul>
-                                <li>odpowiada za wygląd stron / aplikacji internetowych,</li>
-                                <li>odpowiada za interakcję z użytkownikiem,</li>
-                                <li>jest generowany przy użyciu trzech technologii: HTML, CSS i JavaScript</li>
-                                <li>Technologie, które są używane do budowania aplikacji, stron itp.: HTML, CSS,
-                                    JavaScript
-                                    (część programistyczna).</li>
-                            </ul>
-
-                            <h4>Czym jest backend?</h4>
-                            <ul>
-                                <li>Wszystko co dzieje się poza przeglądarką.</li>
-                            </ul>
-                            <h4>Ścieżka rozwoju</h4>
-                            <p><a href="https://roadmap.sh/frontend">Kliknij tutaj</a>, aby zobaczyć frontendową
-                                roadmapę.
-                            </p>
-                        </section>
-                    </article>
-                    <article>
-                        <h3>Tydzień 2</h3>
-                        <section>
-                            <h4>Kilka słów o warstwach</h4>
-
-                            <p>Poza cebulą i ogrami, również strony internetowe mają warstwy. W świecie informatycznym
-                                liczymy
-                                od 0,
-                                tak więc mamy:</p>
-                            <ul>
-                                <li><strong>Warstwa 0 - Treść</strong> czyli rzecz najważniejsza</li>
-                                <li><strong>Warstwa 1 - Semantyka</strong> lub inaczej HTML, który opisuje nam warstwę
-                                    treści,
-                                    "opakowuje ją" w znaczniki</li>
-                                <li><strong>Warstwa 2 - Prezentacja</strong> czyli CSS, który nadaje wygląd</li>
-                                <li><strong>Warstwa 3 - Interakcja</strong> czyli JavaScript</li>
-                            </ul>
-
-                            <p>Wyobraź sobie warstwy w formie bloku, w którym na każdym piętrze mieszka inny sąsiad
-                                (zaczynając
-                                od
-                                treści
-                                na parterze). Sąsiedzi niestety mają tę smutną przypadłość, że często zalewają tych,
-                                których
-                                mają
-                                poniżej.</p>
-
-                            <p>Każda z warstw ma swoją
-                                odpowiedzialność, dlatego pamiętaj <strong>jeśli możesz coś zrobić HTMLem, to rób to
-                                    HTMLem
-                                    i
-                                    nie
-                                    mieszaj do
-                                    tego, np. JavaScriptu</strong></p>
-                        </section>
-                        <section>
-                            <h4>HTML</h4>
-                            <p>HTML to skrót od HyperText Markup Language. To język <strong>znaczników</strong>, a nie
-                                programowania!</p>
-
-                            <p><span style="color: orange"> &lt;znacznik</span><span style="color: rgb(31, 157, 189)">
-                                    atrybut="wartość"</span><span style="color: orange">&gt;</span>treść<span
-                                    style="color: orange"> &lt;/znacznik&gt;</span></p>
-
-                            <h5>Główne znaczniki</h5>
-                            <ul>
-                                <li><strong>&lt;main&gt;</strong> - główna część dokumentu</li>
-                                <li><strong>&lt;section&gt;</strong> - sekcje dokumentu, dla logicznego podziału
-                                    całości;
-                                </li>
-                                <li><strong>&lt;article&gt;</strong> - samodzielne treści, coś jak sekcja sport w
-                                    gazecie,
-                                    artykuł;</li>
-                                <li><strong>&lt;header&gt;</strong> - nagłówek dokumentu, sekcji, artykułu</li>
-                                <li><strong>&lt;footer&gt;</strong> - stopka dokumentu, sekcji, artykułu</li>
-                                <li><strong>&lt;h1-h6&gt;</strong> - tekstowe nagłówki tytułowe dokumentu, sekcji,
-                                    artykułu
-                                </li>
-                                <li><strong>&lt;p&gt;</strong> - paragraf/akapit</li>
-                            </ul>
-
-                            <p>Cała specyfikacja HTML jest dostępna na <a href="https://www.w3.org/TR/html52/">stronie
-                                    w3c</a>.
-                            </p>
-                        </section>
-                        <section>
-                            <h4>CSS</h4>
-                            <p>CSS to Cascading Style Sheets, czyli kaskadowe arkusze <strong>stylów(!)</strong>
-                                odpowiadające
-                                za prezentację, wygląd elementów HTML</p>
-
-                            <section>
-                                <h5>Budowa reguły CSS</h5>
-
-                                <p>selektor {<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;właściwość: wartość;<br />
-                                    }<br /></p>
-
-                                <p>Właściwości może być więcej, ale każda musi być zapisana w powyższy sposób.</p>
-                            </section>
-                            <section>
-                                <h5>Metody stylowania:</h5>
-                                <ul>
-                                    <li>znacznik &lt;style&gt; - możemy umieścić go w &lt;head&gt; pliku HTML,</li>
-                                    <li>zewnętrzny arkusz stylów - znacznik <span
-                                            style="color: rgb(255, 200, 59);">&lt;link</span> <span
-                                            style="color: orange;">
-                                            href="style.css"</span> <span
-                                            style="color: rgb(31, 157, 189)">rel="stylesheet"</span>
-                                        <span style="color: green;">type="text/css"</span><span
-                                            style="color: rgb(255, 200, 59);">&gt;</span> również umieszczamy w
-                                        &lt;head&gt;
-                                    </li>
-                                </ul>
-                                <p>Cała specyfikacja CSS jest dostępna na <a href="https://www.w3.org/TR/CSS/">stronie
-                                        w3c</a>.
-                                </p>
-
-                            </section>
-                        </section>
-                    </article>
-                    <article>
-                        <h4>Magia programowania</h4>
-                        <p>Kolejność wykonywania instrukcji jest badzo ważna w programowaniu. Taki sposób zapisu
-                            kroków czy instrukcji nazywamy algorytmem, który można zapisać np. za pomocą schematu
-                            blokowego.</p>
-                        <section>
-                            <h5>Główne elementy budowy schematów blokowych</h5>
-                            <ul>
-                                <li><strong>strzałka</strong> – wskazuje jednoznacznie powiązania i ich kierunek
-                                </li>
-                                <li><strong>operand</strong> – prostokąt, do którego wpisywane są wszystkie operacje
-                                    z wyjątkiem instrukcji wyboru</li>
-                                <li><strong>predykat</strong> – romb, do którego wpisywane są wyłącznie instrukcje
-                                    wyboru/warunki</li>
-                                <li><strong>etykieta</strong> – owal służący do oznaczania początku albo końca
-                                    sekwencji schematu (kończy, zaczyna albo przerywa lub przenosi schemat).</li>
-                            </ul>
-
-                            <p>Schemat blokowy pozwala dostrzec istotne etapy algorytmu i logiczne zależności między
-                                nimi.</p>
-                        </section>
-
-                        <p>Programowanie to zamiana ludzkiego języka na język zrozumiały przez komputer. Nie
-                            zakładaj, że komputer coś wie. Komputer wie tylko tyle ile mu dostarczysz.</p>
-
-                    </article>
-                </section>
-                <section>
-                    <h3>Tydzień 3</h3>
-                    <article>
-                        <h4>Kanban</h4>
-                        <p>Kanban (z jp. "spis widoczny") - narzędzie do planowania pracy, dobre gdy chcesz śledzić
-                            swoje postępy</p>
-
-                        <ol>
-                            <li>To do - wszystko co jest do zrobienia</li>
-                            <li>Doing - zadania w trakcie (najlepiej trzymać tu jedną rzecz, żeby skupić się na jej
-                                dowiezieniu)</li>
-                            <li>Done - zrobione</li>
-                        </ol>
-
-                        <p>Do stworzenia i prowadzenia swojej prywatnej tablicy kanbanowej dobrze sprawdza się, np. <a
-                                href="https://trello.com/">Trello</a>.</p>
-                        <p>Hint: do utworzonych zadań dodawaj checklisty - odhaczanie listy przynosi sporo radości i
-                            przyspiesza pracę, bo nie trzeba się zastanawiać jaki jest następny krok :) Pamiętaj też o
-                            dobrym opisywaniu "definition of done".
-                        </p>
-                    </article>
-
-                    <article>
-                        <h4>HTML II - atrybuty i nowe znaczniki</h4>
-
-                        <ul>
-                            <li>&lt;br&gt; - przenosi treść do nowej linii (używaj go pojedynczo)</li>
-                            <li>&lt;b&gt; - pogrubia tekst (wyróżnik wizualny)</li>
-                            <li>&lt;strong&gt; - podkreśla wysoką istotność i powagę frazy (wyróżnik semantyczny)</li>
-                            <li>&lt;i&gt; - pochyla tekst (wyróżnik wizualny)</li>
-                            <li>&lt;em&gt; - podkreśla inne znaczenie tekstu, np. ironię (wyróżnik semantyczny)</li>
-                            <li>&lt;a href="" target=""&gt; - link/łącze wewnątrz dokumentu i prowadzący na zewnątrz
-                            </li>
-                            <li>&lt;element id&gt; - atrybut identyfikujący element, może służyć do wewnętrznego
-                                linkowania w postaci &lt;a href="#nazwa-id"&gt;</li>
-                            <li>&lt;nav&gt; - nawigacja</li>
-                            <li>&lt;img src="" alt=""&gt; - obrazek o podanym adresie, to znacznik samozamykający się +
-                                atrybut alt zawierający tekst alternatywny opisujący wstawiony obrazek
-                            </li>
-                        </ul>
-
-                        <p>Każda treść, która jest powtarzalna (jak nav czy footer) powinna być wyrzucona poza znacznik
-                            &lt;main&gt; w naszym HTMLu. Znacznik &lt;nav&gt; opakuj jeszcze w &lt;header&gt;.</p>
-
-                        <p>Spis atrybutów "globalnych" można znaleźć na stronie <a
-                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">MDN web
-                                docs</a>.</p>
-                    </article>
-                    <article>
-                        <h4>Opowieść o wężu, kebabie, wielbłądzie i Pascalu</h4>
-
-                        <p>Co jest najtrudniejszą rzeczą w programowaniu? Wymyślanie nazw! Dlatego warto znać
-                            kilka reguł nazywania rzeczy, które ułatwią nam życie:</p>
-
-                        <ul>
-                            <li>zapisuj nazwy <strong>bez</strong> polskich znaków</li>
-                            <li>nie używaj spacji</li>
-                            <li>używaj angielskich słów</li>
-                            <li>trzymaj się jednego schematu - istotna jest konsekwencja</li>
-                        </ul>
-
-                        <section>
-                            <h5>Konwencje nazewnictwa</h5>
-
-                            <ul>
-                                <li>camelCase</li>
-                                <li>kebab-case</li>
-                                <li>snake_case</li>
-                                <li>PascalCase</li>
-                            </ul>
-
-                            <p>Najczęściej będziemy korzystać z dwóch pierwszych metod (kebab z wielbłąda? Hmmm...).</p>
-                        </section>
-                    </article>
-                    <article>
-                        <h4>CSS II</h4>
-                        <p>Style możemy dołączać na różne sposoby. Jednym z nich jest styl przy znaczniku z
-                            wykorzystaniem atrybutu style, czyli inaczej styl liniowy/inline:
-                            <p>&lt;znacznik style="color:yellow;"&gt;treść&lt;/znacznik&gt;</p>
-                            <p>Niemniej, takie stylowanie średnio ma sens, wprowadza zbyt duży chaos do kodu. I tu z
-                                pomocą
-                                przychodzą prawdziwe selektory!</p>
-
-                            <section>
-                                <h5>Prawdziwe selektory</h5>
-                                <ul>
-                                    <li>element - np. h1, p, header itp.</li>
-                                    <li>.class - klasy służące do pogrupowania jakichś elementów; . (kropka) to selektor
-                                        klasy</li>
-                                    <ul>
-                                        <li>HTML: <br /> &lt;znacznik class="name"&gt;treść&lt;/znacznik&gt;</li>
-                                        <li>CSS: <br />.name {<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;właściwość: wartość;<br />
-                                            }</li>
-                                    </ul>
-                                    <li>#id - powinno być jedno na stronie (!); ; # (hash) to selektor klasy</li>
-                                    <ul>
-                                        <li>HTML: <br /> &lt;znacznik id="name"&gt;treść&lt;/znacznik&gt;</li>
-                                        <li>CSS: <br />#name {<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;właściwość: wartość;<br />
-                                            }</li>
-                                    </ul>
-                                </ul>
-
-                                <p>Selektory można łączyć ze sobą i używać do stylowania, np. <i>nav a</i> - czyli linki
-                                    w
-                                    nawigacji. Przy takim zapisie zawsze ten ostatni element będzie ostylowany.</p>
-                            </section>
-                            <section>
-                                <h5>!important - zmora stylowania</h5>
-                                <p>!important nadpisuje wszystkie style, zabija wszystkie wcześniej zdefiniowane reguły.
-                                    Nie
-                                    powinno się tego używać (może wprowadzić chaos do kodu), chyba że wiesz dlaczego
-                                    zamierzasz tego użyć. !important zapisujemy w kodzie za właściwością, np.:</p>
-                                <p>a {<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #787878 !important;<br />
-                                    }</p>
-                            </section>
-
-                            <section>
-                                <h5>Specyficzność w CSS</h5>
-
-                                <p>Specyficzność to kolejna zmora programistów - w istocie są to proste reguły, które
-                                    warto
-                                    znać, bo ułatwiają dalszą pracę. Specyficzność działa trochę jak klasyfikacja
-                                    medalowa -
-                                    aby określić kolejność miejsc, najpierw patrzymy na liczbę medali złotych, potem
-                                    srebrnych, a na końcu brązowych.</p>
-
-                                <p>CSSowa klasyfikacja medalowa:</p>
-
-                                <ol>
-                                    <li>!important - ma najwyższą specyficzność</li>
-                                    <li>style=""</li>
-                                    <li>#id</li>
-                                    <li>.class</li>
-                                    <li>element - ma najniższą specyficzność</li>
-                                </ol>
-
-                                <p>Jeżeli specyficzność jest równa, pierwszeństwo ma selektor umieszczony niżej w pliku
-                                    .css. Podobnie jest przy wpisywanych własnościach - ta niżej "wygrywa".</p>
-
-                                <p>Korsan rekomenduje - dodawaj klasy do wszystkich elementów i unikaj zagnieżdżeń w
-                                    CSSie.
-                                    Zamiast header nav a, nadaj temu klasę .header-link</p>
-
-                                <div class="citation-block">
-                                    <span class="material-icons">
-                                        format_quote
-                                    </span>
-                                    <cite>There are only two hard things in Computer Science: cache invalidation
-                                        and naming things.</cite>
-                                    <p>--Phil Karlton</p>
-                                </div>
-                            </section>
-                            <section>
-                                <h5>Nazewnictwo klas</h5>
-                                <ul>
-                                    <li>używaj pojedynczych słów z j. angielskiego,</li>
-                                    <li>nazywaj rzeczy zgodnie z ich funkcją na strobnie,</li>
-                                    <li>startuj z małej litery,</li>
-                                    <li>nie zaczynaj od cyfry,</li>
-                                    <li>jeśli musisz użyć dwóch słów, to pamiętaj o kebab-case,</li>
-                                    <li>staraj się żeby element miał jedną klasę (nie zwiększaj specyficzności bez
-                                        potrzeby.
-                                    </li>
-                                </ul>
-                            </section>
-                    </article>
-
-                    <article>
-                        <h4>Jak działa przeglądarka?</h4>
-
-                        <p>HTTP(S) - Hypertext Transfer Protocol (Secure) - protokół, którego używa przeglądaka do
-                            transportowania HTML-a. Pobiera i wyświetla pliki znajdujące się na stronach internetowych.
-                        </p>
-
-                        <p>URL - Uniform Resource Locator - adres, który wpisujemy. Ten adres składa się z kilku
-                            części, na przykładzie https://cotenfrontend:443/index.html?parametry=wartość:</p>
-
-                        <ul>
-
-                            <li>https:// - protokół</li>
-                            <li>cotenfrontend.pl - host (adres serwera)</li>
-                            <li>:443 - port (ta część zazwyczaj jest dla użytkownika niewidoczna). Wskazuje
-                                przeglądarce, na
-                                którym porcie na serwerze znajdują się pliki strony</li>
-                            <li>/ - bardzo ważny znak / - root - mówi, w którym
-                                miejscu należy szukać zasobu (np. w src). Jeśli podajemy
-                                źródło ze slashem na początku (src="/img.jpg"), przeglądarka szuka w katalogu głównym
-                                (ścieżka bezwzględna). Jeśli
-                                podajemy bez (src="img.jpg") - szuka po całym adresie, czyli np. w katalogu
-                                podstrony (ścieżka względna).</li>
-                            <li>index.html - ścieżka dostępu do zasobu</li>
-                            <li>?parametr=wartość - parametry</li>
-                        </ul>
-                        <p>DNS - Domain Name System - system tłumaczący nazwy pisane zrozumiałe dla ludzi na
-                            odpowiadający jej adres IP.</p>
-
-                        <p>parsowanie - sprawdzanie składni</p>
-
-                        <p>renderowanie - zamiana kodu na to, co widzimy.</p>
-
-                        <p>Komunikacja przeglądarka-serwer odbywa się w modelu request-response (żądanie-odpowiedź).</p>
-
-                        <section>
-                            <h5>Kody odpowiedzi HTTP</h5>
-
-                            <ul>
-                                <li>1xx - hold on (poczekaj, za chwilę dostaniesz odpowiedź),</li>
-                                <li>2xx - here you go (200, czyli wszystko ok),</li>
-                                <li>3xx - go away (przekierowania: szukasz w złym miejscu, ale przekieruję Cię, bo wiem
-                                    gdzie),</li>
-                                <li>4xx - you fucked up (np. 404, strony nie znaleziono),</li>
-                                <li>5xx - I fucked up (wewnętrzne błędy serwera).</li>
-                            </ul>
-                            <p>Kody możemy sprawdzić w przeglądarkowych DevToolsach w zakładce Network.</p>
-                        </section>
-                    </article>
-                </section>
-
-                <section>
-                    <h3>JavaScript</h3>
-                    <p>JavaScript to warstwa odpowiadająca za interakcję, język programowania posiadający bardziej
-                        rozbudowaną składnię niż HTML i CSS. Wszystkie informacje ze szkolenia dotyczą standardu
-                        ECMAScript 2015+ (ES6+). Kod JS uruchamia się raz - po załadowaniu strony</p>
-
-                    <p>Z czego składa się JS?</p>
-                    <ul>
-                        <li>wartości - są tym dla JS czym liczby dla matematyki, już istnieją we "wszechświecie
-                            wartości", są niezmienialne, nie tworzymy ich, ale się do nich wpinamy,</li>
-                        <li>operacje porównywania</li>
-                        <li>literały</li>
-                        <li>zmienne</li>
-                        <li>obiekty</li>
-                        <li>funkcje - nazwa('parametr');</li>
-                    </ul>
-
-                    <p>Kod JS ma rozszerzenie .js oraz znacznik &lt;script&gt;, który dodajemy na samym dole tuż przed
-                        zamknięciem znacznika &lt;/body&gt;.</p>
-                    <p>&lt;script src=''&gt;&lt;/script&gt;</p>
-
-                    <p>Funkcja alert - wyświetla modal z napisem (zdefiniowanym w parametrze) przed załadowaniem strony:
-                        <i>alert('Uwaga modal!').</i></p>
-                    <p>Polecenie console.log - służy do komunikacji w konsoli (DevTools-->Console):
-                        <i>console.log('Uwaga, uwaga!').</i></p>
-                    <p>Kolejność zapisu w pliku .js ma znaczenie, to kolejność wykonywania zadań, np. alert z pierwszej
-                        linii zostanie wykonany przed poleceniami z linii 2. i 3.</p>
-
-                    <article>
-                        <h5>Zmienne</h5>
-                        <p>Zmienna to połączenie między nazwą, której chcemy użyć, a wartością. Dzięki temu wiemy co
-                            jest w środku zmiennej i tworzymy powiązania.</p>
-                        <p>const firstName = 'Paulina';<br />
-                            const age = 29;</p>
-
-                        <p>Nazwy zmiennych umieszczamy w kodzie bez nawiasów!</p>
-
-                        <p>Literał - specjalny ciąg znaków, który zapisujemy w ``(backtick/backquote), który zawiera
-                            zmienne:<br /> console.log(`Cześć, nazywam się ${firstName} i mam ${age} lat.`);</p>
-                    </article>
-
-                </section>
-
-            </div>
-            <div class="content-card">
-                <section>
-                    <h2>Przydatne linki</h2>
-
-                    <ul>
-                        <li><a href='https://roadmap.sh/frontend'>https://roadmap.sh/frontend</a> </li>
-                        <li><a href='https://validator.w3.org/nu/#textarea'>https://validator.w3.org/nu/#textarea</a> -
-                            walidator kodu</li>
-                        <li><a href='https://www.w3.org/TR/html52/'>https://www.w3.org/TR/html52/</a> - dokumentacja
-                            HTML</li>
-                        <li><a href='https://www.w3.org/TR/CSS/'>https://www.w3.org/TR/CSS/</a> - dokumentacja CSS</li>
-                        <li><a
-                                href='https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes'>https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes</a>
-                            - spis globalnych
-                            atrybutów HTML</li>
-                        <li><a href='https://trello.com/'>https://trello.com/</a> - tablica kanbanowa do
-                            ogarniania pracy i życia</li>
-                        <li><a href='https://coolors.co/'>https://coolors.co/</a> - generator palet
-                            kolorystycznych</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li><a href='https://www.cssmatic.com/'>https://www.cssmatic.com/</a> - generator box-shadow,
-                            szumu, border-radius i gradientów</li>
-                        <li><a href='https://devupgrade.online/'>https://devupgrade.online/</a> - dalsza nauka dla
-                            programistów na poziomie junior i regular</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-
+        
+      </div>
     </main>
 
-    <footer>
-        Strona domowa Pauliny Mos - wszystkie treści są efektem uczestnictwa w szkoleniu WTF: Co Ten Frontend
+    <footer class="footer">
+      Strona domowa Pauliny Mos - wszystkie treści są efektem uczestnictwa w
+      szkoleniu WTF: Co Ten Frontend
     </footer>
 
-    <script src='main.js'></script>
-
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
