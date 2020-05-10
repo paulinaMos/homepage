@@ -159,6 +159,7 @@ display: inline-block;
   box-shadow: 2px 2px 24px -2px #34496633;
   position: fixed;
   text-align: right;
+  z-index: 999;
 }
 
 .navigation__link {
