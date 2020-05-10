@@ -8,7 +8,7 @@ body {
 
 p {
   color: #333333;
-  /* margin: 0px 0px 24px 0px; */
+  margin: 0px 0px 24px 0px;
   line-height: 1.6rem;
 }
 
@@ -23,7 +23,10 @@ h2 {
   margin: 8px 0px 24px 0px;
 }
 
-
+h3 {
+  line-height: 1.6rem;
+  margin: 8px 0px 16px 0px;
+}
 
 h4 {
   line-height: 1.6rem;
@@ -61,7 +64,7 @@ a {
 }
 
 .content-card {
-  background: #ffffffb9;
+  background: #f4fdff;
   padding: 32px 48px;
   margin-bottom: 32px;
   border-radius: 8px;
@@ -73,6 +76,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   min-width: 288px;
+  position: relative;
 }
 
 .content-card__title {
@@ -92,6 +96,7 @@ a {
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 16px;
   background-color: #34496607;
   border-radius: 4px;
 }
@@ -100,6 +105,7 @@ a {
   color: #ec0868;
   font-size: 0.8rem;
   text-align: right;
+  margin-bottom: 0;
 }
 
 
@@ -113,13 +119,13 @@ a {
 }
 
 .hero {
-
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 56px;
   padding: 24px 16px;
-  box-sizing: border-box;
+  position: relative;
+  overflow: visible;
 }
 
 .hero__description {
@@ -135,11 +141,13 @@ a {
 
 .hero__image {
   border-radius: 8px;
-  margin: 8px 16px;
   width: 100%;
   max-width: 400px;
   min-width: 150px;
   display: inline-block;
+  clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
+  position: absolute;
+  right: 16px;
 }
 
 .hero__text {
@@ -182,4 +190,78 @@ display: inline-block;
   min-width: 280px;
   box-sizing: border-box;
   text-align: center;
+}
+
+
+.margin {
+  background-color: sandybrown;
+  border: dashed 2px black;
+  width: 350px;
+  height: 250px;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-left: 8px;
+  margin-bottom: 48px;
+  position: relative;
+  left: 16vw;
+  top: 16px;
+  
+}
+
+.border {
+  background-color: peachpuff;
+  border: solid 2px black;
+  width: 300px;
+  height: 180px;
+  box-sizing: border-box;
+  margin: auto;
+  padding-top: 8px;
+  padding-left: 8px;
+  position: absolute;
+  left: 7%;
+  top: 13%;
+  }
+
+.padding {
+  background-color: darkseagreen;
+  border: dashed 2px black;
+  width: 250px;
+  height: 100px;
+  box-sizing: border-box;
+/*   margin: auto; */
+padding-top: 8px;
+  padding-left: 8px;
+  position: absolute;
+  left: 7.5%;
+  top: 22%;
+}
+
+.element {
+  background-color: paleturquoise;
+  border: solid 2px black;
+  width: 180px;
+  height: 35px;
+  padding: 8px;
+  box-sizing: border-box;
+/*   margin: auto; */
+  position: absolute;
+  left: 13%;
+  top: 32%;
+  }
+
+.centered {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+
+.sticky {
+  background: #f4fdff;
+  padding: 8px 0;
+  position: sticky;
+  top: 56px;
 }

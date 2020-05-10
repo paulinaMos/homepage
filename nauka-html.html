@@ -33,7 +33,9 @@
 
         <div class="content-card">
           <section>
+            <div class="sticky">
             <h2 class="content-card__title">Tydzień 1</h2>
+          </div>
             <article>
               <h3>Jak korzystać z kursu?</h3>
 
@@ -83,7 +85,9 @@
         </div>
         <div class="content-card">
           <section>
+            <div class="sticky">
             <h2 class="content-card__title">Tydzień 2</h2>
+          </div>
             <article>
               <h3>Kilka słów o warstwach</h3>
 
@@ -269,7 +273,9 @@
         </div>
         <div class="content-card">
           <section>
-            <h2 class="content-card__title">Tydzień 3</h2>
+            <div class="sticky">
+              <h2 class="content-card__title">Tydzień 3</h2>
+            </div>
             <article>
               <h3>Kanban</h3>
               <p>
@@ -588,76 +594,194 @@
                 </p>
               </section>
             </article>
-          </section>
-
-          <section>
-            <h3>JavaScript</h3>
-            <p>
-              JavaScript to warstwa odpowiadająca za interakcję, język
-              programowania posiadający bardziej rozbudowaną składnię niż HTML i
-              CSS. Wszystkie informacje ze szkolenia dotyczą standardu
-              ECMAScript 2015+ (ES6+). Kod JS uruchamia się raz - po załadowaniu
-              strony
-            </p>
-
-            <p>Z czego składa się JS?</p>
-            <ul>
-              <li>
-                wartości - są tym dla JS czym liczby dla matematyki, już
-                istnieją we "wszechświecie wartości", są niezmienialne, nie
-                tworzymy ich, ale się do nich wpinamy,
-              </li>
-              <li>operacje porównywania</li>
-              <li>literały</li>
-              <li>zmienne</li>
-              <li>obiekty</li>
-              <li>funkcje - nazwa('parametr');</li>
-            </ul>
-
-            <p>
-              Kod JS ma rozszerzenie .js oraz znacznik &lt;script&gt;, który
-              dodajemy na samym dole tuż przed zamknięciem znacznika
-              &lt;/body&gt;.
-            </p>
-            <p>&lt;script src=''&gt;&lt;/script&gt;</p>
-
-            <p>
-              Funkcja alert - wyświetla modal z napisem (zdefiniowanym w
-              parametrze) przed załadowaniem strony:
-              <i>alert('Uwaga modal!').</i>
-            </p>
-            <p>
-              Polecenie console.log - służy do komunikacji w konsoli
-              (DevTools-->Console): <i>console.log('Uwaga, uwaga!').</i>
-            </p>
-            <p>
-              Kolejność zapisu w pliku .js ma znaczenie, to kolejność
-              wykonywania zadań, np. alert z pierwszej linii zostanie wykonany
-              przed poleceniami z linii 2. i 3.
-            </p>
 
             <article>
-              <h4>Zmienne</h4>
-              <p>
-                Zmienna to połączenie między nazwą, której chcemy użyć, a
-                wartością. Dzięki temu wiemy co jest w środku zmiennej i
-                tworzymy powiązania.
-              </p>
-              <p>
-                const firstName = 'Paulina';<br />
-                const age = 29;
-              </p>
+              <h3>JavaScript</h3>
+                <p>
+                  JavaScript to warstwa odpowiadająca za interakcję, język
+                  programowania posiadający bardziej rozbudowaną składnię niż HTML i
+                  CSS. Wszystkie informacje ze szkolenia dotyczą standardu
+                  ECMAScript 2015+ (ES6+). Kod JS uruchamia się raz - po załadowaniu
+                  strony
+                </p>
 
-              <p>Nazwy zmiennych umieszczamy w kodzie bez nawiasów!</p>
+                <p>Z czego składa się JS?</p>
+                <ul>
+                  <li>
+                    wartości - są tym dla JS czym liczby dla matematyki, już
+                    istnieją we "wszechświecie wartości", są niezmienialne, nie
+                    tworzymy ich, ale się do nich wpinamy,
+                  </li>
+                  <li>operacje porównywania</li>
+                  <li>literały</li>
+                  <li>zmienne</li>
+                  <li>obiekty</li>
+                  <li>funkcje - nazwa('parametr');</li>
+                </ul>
 
-              <p>
-                Literał - specjalny ciąg znaków, który zapisujemy w
-                ``(backtick/backquote), który zawiera zmienne:<br />
-                console.log(`Cześć, nazywam się ${firstName} i mam ${age}
-                lat.`);
-              </p>
+                <p>
+                  Kod JS ma rozszerzenie .js oraz znacznik &lt;script&gt;, który
+                  dodajemy na samym dole tuż przed zamknięciem znacznika
+                  &lt;/body&gt;.
+                </p>
+                <p>&lt;script src=''&gt;&lt;/script&gt;</p>
+
+                <p>
+                  Funkcja alert - wyświetla modal z napisem (zdefiniowanym w
+                  parametrze) przed załadowaniem strony:
+                  <i>alert('Uwaga modal!').</i>
+                </p>
+                <p>
+                  Polecenie console.log - służy do komunikacji w konsoli
+                  (DevTools-->Console): <i>console.log('Uwaga, uwaga!').</i>
+                </p>
+                <p>
+                  Kolejność zapisu w pliku .js ma znaczenie, to kolejność
+                  wykonywania zadań, np. alert z pierwszej linii zostanie wykonany
+                  przed poleceniami z linii 2. i 3.
+                </p>
+
+                <section>
+                  <h4>Zmienne</h4>
+                  <p>
+                    Zmienna to połączenie między nazwą, której chcemy użyć, a
+                    wartością. Dzięki temu wiemy co jest w środku zmiennej i
+                    tworzymy powiązania.
+                  </p>
+                  <p>
+                    const firstName = 'Paulina';<br />
+                    const age = 29;
+                  </p>
+
+                  <p>Nazwy zmiennych umieszczamy w kodzie bez nawiasów!</p>
+
+                  <p>
+                    Literał - specjalny ciąg znaków, który zapisujemy w
+                    ``(backtick/backquote), który zawiera zmienne:<br />
+                    console.log(`Cześć, nazywam się ${firstName} i mam ${age}
+                    lat.`);
+                  </p>
+                </section>
             </article>
-          </section>
+        </div>
+        <div class="content-card">
+          <section>
+            <div class="sticky">
+            <h2 class="content-card__title">Tydzień 4</h2>
+          </div>
+            <article>
+              <h3>Życie w pudełku: Display, wymiary i overflow</h3>
+
+              <p>Świat stron internetowy jest płaski - poruszamy się w przestrzeni 2-wymiarowej.</p>
+
+              <p>&lt;div&gt; - znacznik nie mający znaczenia semantycznego, "pudełko", używamy go gdy chcemy go czymś opakować, TYLKO gdy nie istnieje odpowiedni semantyczny znacznik.</p>
+
+                <section>
+                <h4>Własność display</h4>
+
+                  <ul>
+
+                    <li>block - domyślna własność, elementy ustawiają się jeden pod drugim</li>
+                    <li>inline - elementy ustawiają się obok siebie, nie można nadać im właściwości blokowych</li>
+                    <li>inline-block - łączy w sobie właśności elementu liniowego, ale można nadać mu własności blokowe:
+                    </li>
+                      <ul>
+                        <li>width</li> 
+                        <li>height</li>height
+                        <li>max-width </li>max-width 
+                        <li>max-height (rzadko się z niej korzysta)</li>max-height (rzadko się z niej korzysta)
+                        <li>min-width</li>
+                        <li>min-height</li>
+                      </ul>
+
+                    <li>overflow - pozwala na odcinanie treści, która wystaje</li>
+                      <ul>
+                        <li>hidden - odcina treść, jeśli nie mieści się w pudełku</li>
+                        <li>visible - domyślna wartość, wystaje poza pudełko</li>
+                        <li>auto - dokłada scroll w elemencie</li>
+                      </ul>
+                  </ul>
+                </section>
+                <section></section>
+                  <h4>Jednostki</h4>
+                  <p>Jednostki zapisujemy razem z liczbą - spacja psuje rzeczy!</p>
+
+                  <ul>
+                    <li>0 - możemy zapisywać bez jednostek, zero zawsze jest zerem</li>
+                    <li>px - piksele</li>
+                    <li>% - procenty - z czego są brane? jeśli pudełko jest w body, to od body; jeśli w pudełku to 50% szerokości pudełka - liczymy je względem rodzica (!)</li>
+                    <li>vw - viewport width - procent z szerokości całego okna, a nie rodzica</li>
+                    <li>vh - viewport height - procent z wysokości całego okna, a nie rodzica</li>
+                  </ul>
+                </section> 
+                <section>
+                  <h4>Box model</h4>
+
+                    <p>Fundament budowy layoutu strony internetowej. Wszystkie elementy na stronie otoczone są "niewidzialnym" prostokątem.</p>
+
+                    <div class="margin">margin
+                      <div class="border">border
+                        <div class="padding"> padding
+                          <div class="element">
+                            <div class="centered">element</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      <ul>
+                        <li>element - o konkretnych wymiarach</li>
+                        <li>padding - wewnętrzny margines, odpowiada za odległość wewnętrznych elementów od krawędzi elementu (sposób zapisu po zegarku (od 12) albo masz TRouBLe :D)</li>
+                          <ul>
+                            <li>padding-top: 10px</li>
+                            <li>padding-right: 20px</li>
+                            <li>padding-bottom: 30px</li>
+                            <li>padding-left: 40px</li>
+                          
+                            <li>padding: 10px 20px 30px 40px</li>
+
+                            <li>wartości lustrzane (góra-dół prawo-lewo): padding: 20px 40px</li>
+
+                              
+                            <li>padding: 20px (wszystkie wartości: pojedynczy zapis)</li>
+                          </ul>
+                        <li>border - obramowanie</li>
+                          <ul>
+                            <li>border-width</li>
+                            <li>border-style: solid; dashed; double; dotted</li>
+                            <li>border-color</li>
+
+                            <li>border-radius - pozwala na zaokrąglenie elementu</li>
+                          </ul>
+                        <li>margin - margines, jest poza naszym obiektem; odpowiada za odsunięcie od inych elementów</li>
+                      </ul>
+
+                      box-sizing:
+                        content-box - domyślna wartość, mówiąca o wielkości samego elementu (bez paddingu, bordera, marginesu)
+                        border-box - do definiowania wielkości całego elementu (bez zewnętrznego marginesu)
+              </section>
+
+                Position - własność pozwalająca na pozycjonowanie elementów, która nadpisuje ustawienia przeglądarki
+
+                static - domyślna wartość; element ustawiony w lewym górnym rogu
+                relative - otwiera dużo opcji, żeby skorzystać z innych pozycji, jak np. absolute
+                absolute - element jest pozycjonowany względem nadrzędnego kontenera
+                fixed - podobne właściwości jak absolute, ale element jest przyklejony w jednym miejscu; trzeba zdefiniować szerokość takiemu elementowi
+                sticky - rodzic takiego elementu nie może mieć overflow; element zjeżdża nam do dołu kontenera i gdy uderza w jego dół, to zostaje w elemencie nadrzędnym; pamiętaj żeby ustawić top!
+
+                top, right, bottom, left
+
+                z-index - definiuje kolejność wyświetlania warstw za pomocą liczby całkowitej - im większa liczba, tym "wyżej" jest dany element.
+
+                Float
+
+                Zapamiętaj! Float nie służy do budowania layoutów. Za to służy do opływania. Element przy użyciu floata zachowuje się jakby miał display: inline-block. Najczęściej używa się go do zdjęć w tekście.
+
+                Clear - własność, której można używać z float. "Czyści", czyli rozszerza pudełko, w którym znajduje się float do wysokości najwyższego elementu.
+
+              
+
+
         </div>
       </div>
     </main>
