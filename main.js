@@ -16,3 +16,12 @@ const empty = document.querySelector('.empty-element__js');
 
 empty.innerHTML = '<span class="pink">Już nie taki pusty element.</span>';
 
+function calculate(myNumber) {
+    console.log(`Dostałam ${myNumber}`)
+    return myNumber*7;
+}
+
+const myResult = calculate(age);
+
+console.log(myResult);
+console.log(age);
